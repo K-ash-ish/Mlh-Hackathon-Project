@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Yomogi', cursive;
+    font-size: 1.7rem;
+    line-height: 2;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.panels{
+    min-height: 100vh;
+    
+    display: flex;
+}
+
+.panel{
+    background-repeat:no-repeat ;
+    background-position: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition:0.5s;
+    cursor: pointer;
+    
+}
+.panel.open{
+    font-size: 3rem;
+    flex: 5;
+}
+.panel p:nth-child(2) {
+    font-size: 2.5em;
+}
+.panel > *{
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in 0.5s;
+    
+}
+
+.panel > *:first-child{transform: translateY(-100%);}
+.panel.open-active > *:first-child{transform: translateY(0);}
+.panel > *:last-child{transform: translateY(100%);}
+.panel.open-active > *:last-child{transform: translateY(0);}
+
+.panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
+.panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
+.panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
+.panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
+.panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+
+
+@media(max-width:720px){
+    body{
+        overflow: visible;
+    }
+   .panels{
+       display: flex;
+       flex-direction: column;
+
+   } 
+   
+   .panel > *:first-child{visibility: hidden;}
+   .panel.open-active > *:first-child{visibility:visible;}
+   .panel > *:last-child{visibility: hidden;}
+   .panel.open-active > *:last-child{visibility:visible;}
+}
