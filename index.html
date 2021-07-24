@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GreetWithoutMeet</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
 
         <nav id="navbar">
-            <a class="navbar-brand" href="">Page Title</a>
+            <a class="navbar-brand" href=""><span class="Greet">Greet</span>Without <span class="Meet">Meet</span></a>
             <ul>
                 <li class="nav-item underline"><a class="nav-link" href="">Home</a></li>
                 <li class="nav-item underline"><a class="nav-link" href="">Reviews</a></li>
@@ -24,44 +24,82 @@
         
         <section id="welcome-section">
             
-
-
-
         </section>
 
-        <!-- <section id="our-costumers">
-
-            <div class="user-review">
-
-                <div class="user-1">
-                    <img src="generated_photos_5e6888e76d3b380006f21c9f.jpg" alt="">
-                    <p>Great website to wish your loved ones. Easy to use.</p>
-                </div>
-                    
-                <div class="user-2">
-                    <img src="generated_photos_5e6883946d3b380006f0e599.jpg" alt="">
-                    <p>With my busy schedule of work this website helped me to wish my wife on our Anniversary.</p>
-                </div>
-                    
-                <div class="user-3">
-                    <img src="generated_photos_5e68892a6d3b380006f22bcb.jpg" alt="">
-                    <p>Easy to use. Just set date and time and it will do the rest.</p>
-                </div>
-                
-            </div>
-
-        </section> -->
 
         <section id="user-details">
+            <div class="form">
+                <form action="" id="info-form">
+                    <div>
+                        <label id="name-label" for="name">
+                            Name : <input required class="input-text" type="text" id="name">
+                        </label>
+                    </div>
+                    <div>
+                        <label id="email-label" for="email">
+                            Email : <input required class="input-text" type="email" id="email" >
+                        </label>
+                    </div>
+                    <div>
+                        <label id="wish-label" for="wish">
+                            Wish : <input required class="input-text" type="text" id="wish">
+                        </label>
+                    </div>
+                    <div>
+                        <label id="gift-label" for="gift">
+                            Gift : <input required class="input-text" type="text" id="gift">
+                        </label>
+                    </div>
+                    
+                    <div class="birthdate">
+                        <label id="birthdate-label" for="birthday">
+                            Birthdate : <input class="input-text" type="date" id="birthday" min="1988-01-01" max="2021-07-30">
+                        </label>
+                        <label id="message-time-label" for="message">
+                            Time Of Message : <input class="input-text" type="time" id="message" min="1988-01-01" max="2021-07-30">
+                        </label>
+                    </div>
 
+                    <div id="submit-form">
+                        <button id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="child1">
+                <div class="image">
+                  <img src="https://images.unsplash.com/photo-1627054294189-4abd72021135?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img>
+                </div>
+                <div class="user-name">Sample Card</div>
+                <p class="wish">Your Wishes</p>   
+              <p class="hover-below">Hover Below</p>
+                <div class="surprise">
+                  <p class="surprise-message">Sent 100$ Check wallet</p>
+                </div>
+              </div>
+          
         </section>
 
-        <!-- <section class="donate-us">
-            
-        </section> -->
 
         <footer>
-
+            <div class="social-media">
+                <div class="social-media-links">
+                    <i class="fab fa-facebook-square"></i>
+                    <a href="#">Facebook</a>
+                </div>
+                <div class="social-media-links">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/K-ash-ish">Github</a>
+                </div>
+                <div class="social-media-links">
+                    <i class="fab fa-twitter"></i>
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="social-media-links">
+                    <i class="fas fa-envelope"></i>
+                    <a href="#">Mail</a>
+                </div>
+            </div> 
         </footer>
 
     </div>
