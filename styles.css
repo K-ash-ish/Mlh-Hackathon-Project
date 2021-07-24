@@ -1,84 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
-
 html{
     box-sizing: border-box;
 }
 *{
     box-sizing: inherit;
-    padding: 0;
     margin: 0;
 }
 
-body{
-    font-family: 'Yomogi', cursive;
-    font-size: 1.7rem;
-    line-height: 2;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    overflow: hidden;
-}
+/*Styling for navbar */
 
-.panels{
-    min-height: 100vh;
-    
-    display: flex;
+ul{
+    list-style: none;
 }
-
-.panel{
-    background-repeat:no-repeat ;
-    background-position: center;
-    flex: 1;
+a,button{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+#navbar{
+    border-bottom: 1px solid black;
+    padding:3rem;
+    height: 60px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition:0.5s;
-    cursor: pointer;
-    
+    justify-content: space-between;
 }
-.panel.open{
-    font-size: 3rem;
-    flex: 5;
+.navbar-brand{
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 }
-.panel p:nth-child(2) {
-    font-size: 2.5em;
+#navbar ul{
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
 }
-.panel > *{
-    flex: 1 0 auto;
+.nav-item{
+    margin-right: 50px;
+    font-weight: 200;
+}
+.underline{
+    position: relative;
+  }
+  
+  .underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+.underline:hover::before{
+    left: 0;
+    right: auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: ease-in 0.5s;
-    
+  }
+button{
+    font-size: 1.3rem;
+    font-weight: 200;
+    border-radius: 40px;
+    padding: 10px 30px 10px 30px;
+    background: #ffffff;
+    border: solid #d147ac 2px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.panel > *:first-child{transform: translateY(-100%);}
-.panel.open-active > *:first-child{transform: translateY(0);}
-.panel > *:last-child{transform: translateY(100%);}
-.panel.open-active > *:last-child{transform: translateY(0);}
-
-.panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-.panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
-.panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-.panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-.panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
-
-
-@media(max-width:720px){
-    body{
-        overflow: visible;
-    }
-   .panels{
-       display: flex;
-       flex-direction: column;
-
-   } 
-   
-   .panel > *:first-child{visibility: hidden;}
-   .panel.open-active > *:first-child{visibility:visible;}
-   .panel > *:last-child{visibility: hidden;}
-   .panel.open-active > *:last-child{visibility:visible;}
+button:hover{
+     box-shadow: 0 0 11px rgba(33,33,33,.2); 
+     background:linear-gradient(45deg , rgba(244, 196, 243, 0.5),rgba(252, 103, 250, 0.5));
 }
+
+/*Navbar Completed*/
