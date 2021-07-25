@@ -257,3 +257,11 @@ input,button{
 .child1-design{
     box-shadow: 30px 20px 12px 0 rgba(0,0,0,0.2);
 }
+.get-card{
+    margin-top: 10px;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
