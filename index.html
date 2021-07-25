@@ -22,13 +22,31 @@
         </nav>
         
         <section id="welcome-section">
-            
+            <div class="intro">
+                <h1>
+                    Wish your <span class="Meet">loved</span> ones Send them <span class="Greet">Greeting Cards</span> Online.
+                </h1>                
+            </div>
+            <div class="child1">
+                <div class="image">
+                  <img src="https://images.unsplash.com/photo-1627054294189-4abd72021135?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img>
+                </div>
+                <div class="user-name">Sample Card</div>
+                <p class="wish">Your Wishes</p>   
+              <p class="hover-below">Hover Below</p>
+                <div class="surprise">
+                  <p class="surprise-message">Sent 100$ Check wallet</p>
+                </div>
+              </div>
         </section>
 
 
         <section id="user-details">
             <div class="form">
                 <form action="" id="info-form">
+                    <div class="alert">
+                        Your Card Is Ready. Click Get Card.
+                    </div>
                     <div>
                         <label id="name-label" for="name">
                             Name : <input required class="input-text" type="text" id="name">
@@ -50,14 +68,14 @@
                         </label>
                     </div>
                     
-                    <div class="birthdate">
+                    <!-- <div class="birthdate">
                         <label id="birthdate-label" for="birthday">
                             Birthdate : <input class="input-text" type="date" id="birthday" min="1988-01-01" max="2021-07-30">
                         </label>
                         <label id="message-time-label" for="message">
                             Time Of Message : <input class="input-text" type="time" id="message" min="1988-01-01" max="2021-07-30">
                         </label>
-                    </div>
+                    </div> -->
 
                     <div id="submit-form">
                         <button id="submit">Submit</button>
@@ -71,11 +89,11 @@
                 </div>
                 <div class="user-name">Sample Card</div>
                 <p class="wish">Your Wishes</p>   
-              <p class="hover-below">Hover Below</p>
+                <p class="hover-below">Hover Below</p>
                 <div class="surprise">
                   <p class="surprise-message">Sent 100$ Check wallet</p>
                 </div>
-              </div>
+            </div>
           
         </section>
 
@@ -102,8 +120,10 @@
         </footer>
 
     </div>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
