@@ -52,7 +52,7 @@ a,button{
     position: relative;
   }
   
-  .underline::before{
+.underline::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -85,14 +85,32 @@ button:hover{
 
 /*Navbar Completed*/
 
-/*USER DETAILS */
+/*Welcome section*/
 
+#welcome-section{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid black;
+    margin-top: 6rem;
+}
+.intro{
+    width: 50%;
+    font-size: 2.6rem;
+}
+
+
+
+
+/*USER DETAILS */
 #user-details{
     
   height:100vh;
   display:flex;
   justify-content:space-around;
   align-items: center;
+  border-bottom: 1px solid black;
 }
 
 
@@ -141,6 +159,15 @@ input,button{
     width: 100%;
 }
 
+.alert{
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+}
+
 /*Card Design*/
 
 .child1{
@@ -158,7 +185,6 @@ input,button{
   img{ 
     border-top-left-radius:20px;
     border-top-right-radius:20px;
-    background-color:red;
     width:20rem;
     height:12rem;
     border-bottom-left-radius:50% 40%;
@@ -205,6 +231,7 @@ input,button{
 /*Contact */
 
 .social-media{
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -217,3 +244,16 @@ input,button{
     font-size: 1.2rem;
 }
 
+
+/*NEw page For Wish*/
+.container-card{ 
+    height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: white;
+  }
+
+.child1-design{
+    box-shadow: 30px 20px 12px 0 rgba(0,0,0,0.2);
+}
